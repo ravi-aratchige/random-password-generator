@@ -32,6 +32,9 @@ h2 {
 .description span {
 	font-style: italic;
 }
+
+/* RESULTS */
+
 .results {
 	display: flex;
 	font-size: 1rem;
@@ -56,6 +59,9 @@ h2 {
 	background-color: white;
 	border: 0px solid;
 }
+
+/* SETTING PARAMETERS */
+
 .settings {
 	font-size: 1rem;
     width: 15rem;
@@ -65,6 +71,12 @@ h2 {
 }
 .setting {
 	line-height: 2.5rem;
+	display: flex;
+	justify-content: space-evenly;
+}
+.checkmark {
+	border-radius: 50%;
+	/* TODO this won't work? */
 }
 #lower {
 	margin-left: 1rem;
@@ -78,6 +90,9 @@ h2 {
 #symbols {
 	margin-left: 1.9rem;
 }
+
+/* "GENERATE PASSWORD" BUTTON */
+
 #generate {
 	margin-top: 1rem;
 	font-family: 'Poppins', sans-serif;
