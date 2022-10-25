@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* BASIC ALIGNMENT */
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -16,12 +19,18 @@ body {
 	justify-content: center;
 	padding-top: 15vh;
 }
+
+/* CONTAINER INTERNALS */
+
 h2 {
  	font-size:3rem;
 }
 .description {
 	text-align: center;
 	padding: 1rem;
+}
+.description span {
+	font-style: italic;
 }
 .results {
 	display: flex;
@@ -80,6 +89,9 @@ h2 {
 	color: #fff;
     background: #000;
 }
+
+/* HOVER STATES */
+
 #generate:hover {
 	color: #000;
     background: #fff;
