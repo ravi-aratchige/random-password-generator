@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Password Generator</title>
-	<link rel="stylesheet" type="text/css" href="generator.css">
-	<script src="https://kit.fontawesome.com/adb469b5c1.js" crossorigin="anonymous"></script>
-</head>
-<body>
-   <div class="container">
-   	   	  <h2>Make your Password</h2>
-   	   <div class="results">
-   	   	  <span id="result"></span>
-   	   	  <button id="clipboard" class="btn" alt="copy">
-   	   	  	<i class="far fa-clipboard"></i>
-   	   	  </button>
-   	   </div>
-   	   <div class="settings">
-   	   	  <div class="setting">
-   	   	  	<label for="length">Password Length</label>&nbsp; &nbsp;
-   	   	  	<input type="number" id="length" max="20" min="4" value="20">
-   	   	  </div>
-
-   	   	  <div class="setting">
-   	   	  	<label for="upper">Include UpperCase</label>&nbsp; &nbsp;
-   	   	  	<input type="checkbox" id="upper">
-   	   	  </div>
-
-   	   	   <div class="setting">
-   	   	  	<label for="lower">Include LowerCase</label>&nbsp; &nbsp;
-   	   	  	<input type="checkbox" id="lower" >
-   	   	  </div>
-
-   	   	   <div class="setting">
-   	   	  	<label for="numbers">Include Numbers</label>&nbsp; &nbsp; &nbsp;
-   	   	  	<input type="checkbox" id="numbers">
-   	   	  </div>
-           
-           <div class="setting">
-   	   	  	<label for="symbols">Include Symbols</label>&nbsp; &nbsp; &nbsp;
-   	   	  	<input type="checkbox" id="symbols">
-   	   	  </div>
-
-   	   </div>
-   	   <button id="generate">
-   	   	   Generate Password
-   	   </button>
-   </div> 
-
- <script type="text/javascript" src="generator.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Password Generator</title>
+		<link rel="stylesheet" type="text/css" href="generator.css">
+		<script src="https://kit.fontawesome.com/adb469b5c1.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h2>Random Password Generator</h2>
+			</div>
+			<p class="description">This site allows you to generate a random password for you to use anywhere.<br>Simply specify the necessary parameters, hit "Generate Password" and Voila!</p>
+			<div class="results">
+				<span id="result"></span>
+				<button id="clipboard" class="btn" alt="copy">
+					<i class="far fa-clipboard"></i>
+				</button>
+			</div>
+			<div class="settings">
+					<div class="setting">
+						<label for="length">Password Length</label>&nbsp; &nbsp;
+						<input type="number" id="length" max="20" min="4" value="20">
+					</div>
+					<div class="setting">
+						<label for="upper">Include UpperCase</label>&nbsp; &nbsp;
+						<input type="checkbox" id="upper">
+					</div>
+					<div class="setting">
+						<label for="lower">Include LowerCase</label>&nbsp; &nbsp;
+						<input type="checkbox" id="lower" >
+					</div>
+					<div class="setting">
+						<label for="numbers">Include Numbers</label>&nbsp; &nbsp; &nbsp;
+						<input type="checkbox" id="numbers">
+					</div>
+					<div class="setting">
+						<label for="symbols">Include Symbols</label>&nbsp; &nbsp; &nbsp;
+						<input type="checkbox" id="symbols">
+					</div>
+			</div>
+			<button id="generate">Generate Password</button>
+		</div>
+		<script type="text/javascript" src="generator.js"></script>
+	</body>
 </html>
