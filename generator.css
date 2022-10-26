@@ -148,4 +148,5 @@ input[type=number] {
 }
 #clipboard:hover {
 	cursor: pointer;
+	color: rgb(109, 109, 109);
 }
